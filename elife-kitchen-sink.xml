@@ -534,7 +534,7 @@
         </article-meta>
     </front>
     <body>
-        <sec sec-type="intro">
+        <sec sec-type="intro" id="s1">
             <title>Introduction</title>
             <p>Eukaryotes evolved in a world filled with bacteria and throughout their shared
                 history these two branches of life have developed a complex set of ways to compete
@@ -2178,7 +2178,7 @@
                     <italic>S. rosetta</italic> provides both the molecular basis and model organism
                 for further understanding a new and potentially important class of small molecule
                 information transfer.</p>
-        </sec>
+        
         <sec id="sec1" sec-type="materials|methods">
             <title>Materials and methods</title>
             <sec id="sec1-1">
