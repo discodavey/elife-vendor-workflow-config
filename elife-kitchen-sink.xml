@@ -56,8 +56,7 @@
                         <surname>Brown</surname>
                         <given-names>Laura W</given-names>
                     </name>
-                    <contrib-id contrib-id-type="orcid"
-                        >http://orcid.org/0000-0002-7361-560X</contrib-id>
+                    <contrib-id contrib-id-type="orcid">http://orcid.org/0000-0002-7361-560X</contrib-id>
                     <xref ref-type="aff" rid="aff2">2</xref>
                     <xref ref-type="fn" rid="equal-contrib">&#x2020;</xref>
                     <xref ref-type="other" rid="par-1"/>
@@ -135,8 +134,7 @@
                     <xref ref-type="fn" rid="con8"/>
                     <xref ref-type="fn" rid="conf2"/>
                 </contrib>
-                <on-behalf-of>for the HIV Genome-to-Genome Study and the Swiss HIV Cohort
-                    Study</on-behalf-of>
+                <on-behalf-of>for the HIV Genome-to-Genome Study and the Swiss HIV Cohort Study</on-behalf-of>
                 <contrib contrib-type="author" corresp="yes">
                     <contrib-id contrib-id-type="group-author-key">group-author-id1</contrib-id>
                     <collab>NISC Comparative Sequencing Program</collab>
@@ -152,24 +150,26 @@
                 </contrib>
                 <aff id="aff1">
                     <label>1</label>
-                    <institution content-type="dept">Department of Molecular and Cell
-                        Biology</institution>, <institution>University of California,
-                        Berkeley</institution>, <addr-line>
+                    <institution content-type="dept">Department of Molecular and Cell Biology</institution>,
+                    <institution>University of California, Berkeley</institution>,
+                    <addr-line>
                         <named-content content-type="city">Berkeley</named-content>
                     </addr-line>, <country>United States</country>
                 </aff>
                 <aff id="aff2">
                     <label>2</label>
-                    <institution content-type="dept">Department of Biological Chemistry and
-                        Molecular Pharmacology</institution> , <institution>Harvard Medical
-                        School</institution>, <addr-line>
-                        <named-content content-type="city">Boston</named-content></addr-line> ,
+                        <institution content-type="dept">Department of Biological Chemistry and Molecular Pharmacology</institution>,
+                    <institution>Harvard Medical School</institution>,
+                    <addr-line>
+                        <named-content content-type="city">Boston</named-content>
+                    </addr-line>,
                         <country>United States</country>
                 </aff>
                 <aff id="aff3">
                     <label>3</label>
-                    <institution content-type="dept">Department of Biochemistry</institution> ,
-                        <institution>Stanford University School of Medicine</institution>, <addr-line>
+                    <institution content-type="dept">Department of Biochemistry</institution>,
+                        <institution>Stanford University School of Medicine</institution>,
+                    <addr-line>
                         <named-content content-type="city">Stanford</named-content>
                     </addr-line>, <country>United States</country>
                 </aff>
@@ -196,8 +196,10 @@
                     </name>
                     <aff>
                         <institution>Science Exchange, Palo Alto</institution>,
-                                <addr-line><named-content content-type="city"
-                                >California</named-content></addr-line></aff>
+                                <addr-line>
+                                    <named-content content-type="city">California</named-content>
+                                </addr-line>
+                    </aff>
                 </contrib>
                 <contrib contrib-type="author non-byline">
                     <contrib-id contrib-id-type="group-author-key">group-author-id1</contrib-id>
@@ -400,10 +402,8 @@
                 <award-group id="par-1">
                     <funding-source>
                         <institution-wrap>
-                            <institution-id institution-id-type="FundRef"
-                                >dx.doi.org/10.13039/100000011</institution-id>
-                            <institution content-type="university">Howard Hughes Medical
-                                Institute</institution>
+                            <institution-id institution-id-type="FundRef">dx.doi.org/10.13039/100000011</institution-id>
+                            <institution content-type="university">Howard Hughes Medical Institute</institution>
                         </institution-wrap>
                     </funding-source>
                     <principal-award-recipient>
@@ -424,10 +424,8 @@
                 <award-group id="par-2">
                     <funding-source>
                         <institution-wrap>
-                            <institution-id institution-id-type="FundRef"
-                                >dx.doi.org/10.13039/100000002</institution-id>
-                            <institution content-type="university">National Institutes of
-                                Health</institution>
+                            <institution-id institution-id-type="FundRef">dx.doi.org/10.13039/100000002</institution-id>
+                            <institution content-type="university">National Institutes of Health</institution>
                         </institution-wrap>
                     </funding-source>
                     <award-id>F32 GM086054</award-id>
@@ -445,10 +443,8 @@
                 <award-group id="par-3">
                     <funding-source>
                         <institution-wrap>
-                            <institution-id institution-id-type="FundRef"
-                                >dx.doi.org/10.13039/100000002</institution-id>
-                            <institution content-type="university">National Institutes of
-                                Health</institution>
+                            <institution-id institution-id-type="FundRef">dx.doi.org/10.13039/100000002</institution-id>
+                            <institution content-type="university">National Institutes of Health</institution>
                         </institution-wrap>
                     </funding-source>
                     <award-id>F32 GM089018</award-id>
@@ -466,10 +462,8 @@
                 <award-group id="par-4">
                     <funding-source>
                         <institution-wrap>
-                            <institution-id institution-id-type="FundRef"
-                                >dx.doi.org/10.13039/100000002</institution-id>
-                            <institution content-type="university">National Institutes of
-                                Health</institution>
+                            <institution-id institution-id-type="FundRef">dx.doi.org/10.13039/100000002</institution-id>
+                            <institution content-type="university">National Institutes of Health</institution>
                         </institution-wrap>
                     </funding-source>
                     <award-id>R01 GM086258</award-id>
@@ -487,10 +481,8 @@
                 <award-group id="par-5">
                     <funding-source>
                         <institution-wrap>
-                            <institution-id institution-id-type="FundRef"
-                                >dx.doi.org/10.13039/100000002</institution-id>
-                            <institution content-type="university">National Institutes of
-                                Health</institution>
+                            <institution-id institution-id-type="FundRef">dx.doi.org/10.13039/100000002</institution-id>
+                            <institution content-type="university">National Institutes of Health</institution>
                         </institution-wrap>
                     </funding-source>
                     <award-id>R01 GM099533</award-id>
@@ -508,10 +500,8 @@
                 <award-group id="par-6">
                     <funding-source>
                         <institution-wrap>
-                            <institution-id institution-id-type="FundRef"
-                                >dx.doi.org/10.13039/100000002</institution-id>
-                            <institution content-type="university">National Institutes of
-                                Health</institution>
+                            <institution-id institution-id-type="FundRef">dx.doi.org/10.13039/100000002</institution-id>
+                            <institution content-type="university">National Institutes of Health</institution>
                         </institution-wrap>
                     </funding-source>
                     <award-id>T32 HG00047</award-id>
@@ -525,12 +515,10 @@
                 <award-group id="par-7">
                     <funding-source>
                         <institution-wrap>
-                            <institution content-type="university">Laura and John Arnold
-                                Foundation</institution>
+                            <institution content-type="university">Laura and John Arnold Foundation</institution>
                         </institution-wrap>
                     </funding-source>
-                    <principal-award-recipient> NISC Comparative Sequencing Program
-                    </principal-award-recipient>
+                    <principal-award-recipient> NISC Comparative Sequencing Program</principal-award-recipient>
                 </award-group>
                 <funding-statement>The funders had no role in study design; collection, analysis,
                     and interpretation of data; writing the article; and or the decision to submit
@@ -543,8 +531,7 @@
                 </custom-meta>
                 <custom-meta specific-use="meta-only">
                     <meta-name>Author impact statement</meta-name>
-                    <meta-value>The chemical nature of RIF-1 may reveal a new class of bacterial
-                        signaling molecules.</meta-value>
+                    <meta-value>The chemical nature of RIF-1 may reveal a new class of bacterial signaling molecules.</meta-value>
                 </custom-meta>
             </custom-meta-group>
         </article-meta>
@@ -598,8 +585,7 @@
                 and <xref ref-type="supplementary-material" rid="SD5-data">Source code 1</xref>
                 restored rosette colony development, revealing that <italic>S.
                     rosetta</italic> cells in the RCA culture remained competent to form colonies
-                and would do so when stimulated by the original community of environmental bacteria
-                    (<xref ref-type="other" rid="video1">Video 1</xref>).
+                and would do so when stimulated by the original community of environmental bacteria (<xref ref-type="other" rid="video1">Video 1</xref>).
                 <fig-group>
                     <fig id="fig1" position="float">
                         <object-id pub-id-type="doi">10.7554/eLife.00013.003</object-id>
@@ -619,9 +605,8 @@
                                     machipongonensis</italic> to RCA cultures was sufficient to
                                 induce rosette development. Scale bar, 20 &#x3bc;m.</p>
                             <p>Here is an example of making text display in different colours:
-                                    <named-content content-type="author-callout-style1"
-                                    >red</named-content> and <named-content
-                                    content-type="author-callout-style2">blue</named-content>.</p>
+                                    <named-content content-type="author-callout-style1">red</named-content> 
+                                and <named-content content-type="author-callout-style2">blue</named-content>.</p>
                             <p> Here is an example of pulling in an inline graphic <inline-graphic
                                     xlink:href="elife00013inf001"/>.</p>
                             <p>
@@ -1161,8 +1146,8 @@
                 development, as did six of 16 other closely related species tested in the
                 Bacteroidetes phylum (<xref ref-type="table" rid="tbl1">Table 1</xref>). Therefore,
                 the ability to induce rosette colony development is enriched in
-                    <italic>Algoriphagus</italic> bacteria and their relatives. <boxed-text
-                    id="box1">
+                    <italic>Algoriphagus</italic> bacteria and their relatives.
+                <boxed-text id="box1">
                     <object-id pub-id-type="doi">10.7554/eLife.03952.014</object-id>
                     <label>Box 1.</label>
                     <caption>
@@ -1235,24 +1220,23 @@
                             <ext-link ext-link-type="doi" xlink:href="10.7554/eLife.00013.010"
                                 >http://dx.doi.org/10.7554/eLife.00013.010</ext-link>
                         </p>
+                        <permissions>
+                            <copyright-statement>© 1992, Nature Publishing Group</copyright-statement>
+                            <copyright-year>1992</copyright-year>
+                            <copyright-holder>Nature Publishing Group</copyright-holder>
+                            <license xlink:href="http://creativecommons.org/licenses/by/3.0/">
+                                <license-p>Part <bold>A</bold> is reproduced from Figure 4B–C and 6C, <xref ref-type="bibr"
+                                    rid="bib70">Small et al. (1992)</xref>, <italic>The EMBO
+                                        Journal</italic>; Nature Publishing Group has granted permission
+                                    to reproduce these images under the terms of the Creative Commons
+                                    Attribution 3.0 Unported License (<ext-link ext-link-type="uri"
+                                        xlink:href="http://creativecommons.org/licenses/by/3.0/">CC BY
+                                        3.0</ext-link>)</license-p>
+                            </license>
+                        </permissions>
                     </caption>
-                    <graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="elife00013f002"
-                    />
-                    <permissions>
-                        <copyright-statement>© 1992, Nature Publishing Group</copyright-statement>
-                        <copyright-year>1992</copyright-year>
-                        <copyright-holder>Nature Publishing Group</copyright-holder>
-                        <license xlink:href="http://creativecommons.org/licenses/by/3.0/">
-                            <license-p>Part <bold>A</bold> is reproduced from Figure 4B–C and 6C, <xref ref-type="bibr"
-                                rid="bib70">Small et al. (1992)</xref>, <italic>The EMBO
-                                    Journal</italic>; Nature Publishing Group has granted permission
-                                to reproduce these images under the terms of the Creative Commons
-                                Attribution 3.0 Unported License (<ext-link ext-link-type="uri"
-                                    xlink:href="http://creativecommons.org/licenses/by/3.0/">CC BY
-                                    3.0</ext-link>)</license-p>
-                        </license>
-                    </permissions>
-                </fig>
+                    <graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="elife00013f002"/>
+                    </fig>
             </p>
             <p>Although Bacteroidetes bacteria regulate morphogenetic processes in such diverse
                 lineages as animals, red algae, and green algae (<xref ref-type="bibr" rid="bib67"
