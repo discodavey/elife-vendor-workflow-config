@@ -6,148 +6,79 @@ for file naming requirements.
 
 ## Pre-editing
 
-Export from submission system is a package of XML, the author Word file, a PDF representation fo that word file and any associated asset files eg: 
+####Input:
 
+Export from submission system:
 
-)Generation of file that contains all metadata output from editorial system, cross links the references and other items such as tables and figures, basic automatable house style completed and references styled.
+1. XML metadata file
+2. author Word file
+3. PDF representation of that Word file and figure asset files
+4. Asset files
+
+Asset files can be any combination of the following: 
+
+- figure 
+- figuresupplement 
+- supplementary file 
+- media (includes videos, audio and animation) 
+- source code 
+- source data 
+- reporting standards 
+- appendix asset file, for example figure
+- author response asset file, for example figure
+
+####Expectations:
+During pre-editing the Word file is converted to an HTML file, and overlaid the XML metadata output to cross check. Any confilicting metadata is added as a query for eLife staff or author. **TBD whether eLife staff see proofs before delivery to author** - anticipate initially we'll have this step in the workflow.
+
+For more detailed description of the pre-editing process see **XXX**.
+
+####Output:
+
+- The HTML file can output publishable eLife JATS XML any time once this process is complete
+- All asset files are converted/sized/renamed as appropriate
+- At the end of this process all components are zipped up and delivered to an eLife AWS bucket **TBC**
+- Zip file name: elife-12345-r1.zip
+- Rare, but if reprocessed r1 suffix will be replaced with r2 suffix (zipped file). All actural files remain unchanged in naming convention, even if changed.
+
+####Turnaround time:
+It is expected this process will take 15 minutes of operator time. **TBC**
+The allowed time for the vendor is 24 hours to complete this step.
+
+####Volume:
+It is anticipated that at current publishing volumes up to 5 articles coupld be accepted on one day. However, there are peaks and troughs and we have seen periods of days without acceptances and bunching of up to 7-8 in one day.
 
 ## Copy editing
 
+####Expectations:
+
+- Copy editor edits using the tool, and all components of the article are available when editing
+- If any changes  to assest(s) required, copy editor will either download, edit and reload, or add  AQs, asking author to resupply during the author proofing process **(TBD)**
+
+####Output:
+At the end of the copy editing process all components are zipped up and delivered to an eLife AWS bucket **TBC**
+
+- Zip file name: elife-12345-r1.zip
+- Rare, but if reprocessed r1 suffix will be replaced with r2 suffix (zipped file). All actural files remain unchanged in naming convention, even if changed.
+
+####Turnaround time:
+
+- The allowed time for the vendor is 2 days to complete this step.
+
+####Volume:
+
+It is anticipated:
+
+- 50% of content will require copy editing by the vendor
+- 40% will not require a copy edit
+- 10% will be copy edited onshore by eLife UK freelancers.
 
 ##Proof to author
+
+
 
 ##Author corrections
 
 ##eLife production staff QC
 
 ##final delivery of files
-
-
-
-###### `<f-id>`
-
-This is the file id and is the numerical digit that is used to make up part of the DOI for an article (`<article-id pub-id-type="doi">`). For example an eLife article with the following DOI `/10.7554/eLife.06659` will have an f-id of `06659`.
-
-
-###### `<asset>`
-
-This refers to an asset file related to an article, ie a figure (fig), source code (code), source data (data), media (includes videos, audio and animation) (media), supplementary file (supp), (figures) the figures pdf, reporting standards (repstand).
-
-Should these asset files be present in an appendix or author response, they will take the suffix A or R, respectively before the number, ie: figA or mediaR.
-
-###### `<a-id>`
-
-The `a-id` is the asset id, and indicates the order of an asset in the article. For example an
-article with three figures will have the following asset files:
-
-- elife-00012-fig1.tiff
-- elife-00012-fig2.tiff
-- elife-00012-fig3.tiff
-
-###### `<sub-asset>`
-
-Some assets will have sub-assets, eg figure supplements (figsupp), source data (data), or source code (code). These are indicated by the sub-asset component.
-
-###### `<sa-id>`
-
-Some assets have sub-asset ids, for example, an article with three main figures, where one
-figure has three figure supplements, and one figure has two figure supplements will have the following:
-
-- elife-00012-fig1.tiff
-- elife-00012-fig1-figsupp1.tiff
-- elife-00012-fig1-figsupp2.tiff
-- elife-00012-fig1-figsupp3.tiff
-- elife-00012-fig2.tiff
-- elife-00012-fig3.tiff
-- elife-00012-fig3-figsupp1.tiff
-- elife-00012-fig3-figsupp2.tiff
-
-###### data
-
-Sometimes there is source data at a parent level, but sometimes assets will have source data files associated with them. These data files are indicated by the presence of a `data` in the filename.
-
-###### `<d-id>`
-
-Assets can have multiple source data files associated with them, and these are distinguished with the
-data id.
-
-For example, an article with three main figures, where one figure has three figure supplements, and one figure has two figure supplements, and all have associated data, with some of them having multiple data files, could have the following:
-
-- elife-00012-fig1.tiff
-- elife-00012-fig1-data1.csv
-- elife-00012-fig1-data2.csv
-- elife-00012-fig1-figsupp1.tiff
-- elife-00012-fig1-figsupp1-data1.csv
-- elife-00012-fig1-figsupp2.tiff
-- elife-00012-fig1-figsupp2-data1.csv
-- elife-00012-fig1-figsupp3.tiff
-- elife-00012-fig1-figsupp3-data1.mol
-- elife-00012-fig2.tiff
-- elife-00012-fig2-data1.txt
-- elife-00012-fig3.tiff
-- elife-00012-fig3-data.csv
-- elife-00012-fig3-figsupp1.tiff
-- elife-00012-fig3-figsupp1-data1.csv
-- elife-00012-fig3-figsupp1-data2.csv
-- elife-00012-fig3-figsupp1-data3.csv
-- elife-00012-fig3-figsupp2.tiff
-- elife-00012-fig3-figsupp2-data1.csv
-- elife-00012-fig3-figsupp3.tiff
-- elife-00012-fig3-figsupp3-data1.csv
-
-
-###### code
-
-Sometimes there is source code at a parent level, but sometimes assets will have source code files associated with them. These source code files are indicated by the presence of a `code` in the filename.
-
-###### `<c-id>`
-
-Assets can have multiple source code files associated with them, and these are distinguished with the
-code id.
-
-For example, an article with a top level source code, two main figures, where one figure has source code, and one figure has one figure supplement with source code:
-
-- elife-00012-fig1.tiff
-- elife-00012-fig1-code1.csv
-- elife-00012-fig2.tiff
-- elife-00012-fig2-figsupp1.tiff
-- elife-00012-fig2-figsupp1-code1.csv
-- elife-00012-code1.csv
-
-
-## Zip file naming pattern
-
-###### `<status>`
-
-This is either `poa` (publish on accept) or `vor` (version of record).
-
-##### r`<revision>`
-
-#####Example
-- elife-00012-vor-r4.zip contains
-- elife-00012.xml
-- elife-00012.pdf
-- elife-00012-figures.pdf
-- elife-00012-fig1.tiff
-- elife-00012-fig1-data1.csv
-- elife-00012-fig1-data2.csv
-- elife-00012-fig1-figsupp1.tiff
-- elife-00012-fig1-figsupp1-data1.csv
-- elife-00012-fig1-figsupp2.tiff
-- elife-00012-fig1-figsupp2-data1.csv
-- elife-00012-fig1-figsupp3.tiff
-- elife-00012-fig1-figsupp3-data1.mol
-- elife-00012-fig2.tiff
-- elife-00012-fig2-data1.txt
-- elife-00012-fig3.tiff
-- elife-00012-fig3-data.csv
-- elife-00012-fig3-figsupp1.tiff
-- elife-00012-fig3-figsupp1-data1.csv
-- elife-00012-fig3-figsupp1-data2.csv
-- elife-00012-fig3-figsupp1-data3.csv
-- elife-00012-fig3-figsupp2.tiff
-- elife-00012-fig3-figsupp2-data1.csv
-- elife-00012-fig3-figsupp3.tiff
-- elife-00012-fig3-figsupp3-data1.csv
-
 
