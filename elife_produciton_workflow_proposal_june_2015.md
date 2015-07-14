@@ -10,20 +10,20 @@ The vendor works on Saturdays, but not Sundays and not Indian Bank holidays - a 
 
 
 ##Export process
-Currently ExeterPremedia complete export checks on EJP. This involves ensuring all the data held in the submissions screens is correct, and missing data is helpd in a red stucky note for export, and that all the asset files are correctly named.
-This is required for the PoA wokrflow that eLife manages via AWS and also for the export of content to TNQ for full content processing.
+Currently ExeterPremedia complete export checks on EJP. This involves ensuring all the data held in the submissions screens is correct, and missing data is held in a red stucky note for export, and that all the asset files are correctly named.
+This is required for the PoA wokrflow that eLife manages via Amazon Web Services (AWS) and also for the export of content to TNQ for full content processing.
 
-Currently approx 23% of author names and affiliations are either changed on export or are not contained within the EJP databales and only stored as notes, so there is not really a requirement to maintain this data as cleanly as we do on EJP.
+Currently, approximately 23% of author names and affiliations are either changed on export or are not contained as structured information within the EJP database and are only stored as notes, so there is not really a requirement to maintain this data as cleanly as we do on EJP.
 
 The proposal is that on acceptance, all content is exported straight to ExeterPremedia and they use the XML export and the author's Word file to build the html of the article, which commences the production workflow. Where there are differences in the data, this is resolved here.
 
 ######_Problems_
-- FundRef database on EJP and that many funding details are changed during this process
+- FundRef database is contained within EJP and that many funding details are changed during this process
 - The PoA workflow is reliant on CSV output from EJP to puld the XML
 
 ######_Soultions_
 - Link to FundRef during the production process?
-- There is a 30 min window in the PoA wokrflow when the XML remains in an eLife AWS bucket, this is an opportunity to go in and overwrite it without affecting the POA to HW delivery and the production of the downstream deliveries, CrossRef and PubMed.
+- There is a 30 minute window in the PoA wokrflow when the XML remains in an eLife AWS bucket, this is an opportunity to go in and overwrite it without affecting the PoA to HW delivery and the production of the downstream deliveries, CrossRef and PubMed.
 
 ## Pre-editing
 
@@ -34,12 +34,12 @@ Export from submission system:
 1. XML metadata file
 2. author Word file
 3. PDF representation of that Word file and figure asset files
-4. Asset files
+4. asset files
 
 Asset files can be any combination of the following: 
 
 - figure 
-- figuresupplement 
+- figure supplement 
 - supplementary file 
 - media (includes videos, audio and animation) 
 - source code 
@@ -49,7 +49,7 @@ Asset files can be any combination of the following:
 - author response asset file, for example figure
 
 ####Expectations:
-At the start of this process the Word file is converted to an HTML file, and overlaid the XML metadata output to cross check. Any confilicting metadata is added as a query for eLife staff or author. **TBD whether eLife staff see proofs before delivery to author** - anticipate initially we'll have this step in the workflow.
+At the start of this process the Word file is converted to an HTML file, and overlaid on the XML metadata output to cross check. Any confilicting metadata is added as a query for eLife staff or author. **TBD whether eLife staff see proofs before delivery to author** - anticipate initially we'll have this step in the workflow.
 
 This task is completed using the ECS tool.
 
@@ -68,14 +68,14 @@ It is expected this process will take 15 minutes of operator time. **TBC**
 The allowed time for the vendor is 24 hours to complete this step.
 
 ####Volume:
-It is anticipated that at current publishing volumes up to 5 articles coupld be accepted on one day. However, there are peaks and troughs and we have seen periods of days without acceptances and bunching of up to 7-8 in one day.
+It is anticipated that at current publishing volumes up to 5 articles coupld be accepted on one day. However, there are peaks and troughs and we have seen periods of days without acceptances and instances of bunching up where 7-8 have been accepted in one day.
 
 ## Copy editing
 
 ####Expectations:
 
 - Copy editor edits using the tool, and all components of the article are available when editing
-- If any changes  to assest(s) required, copy editor will either download, edit and reload, or add  AQs, asking author to resupply during the author proofing process **(TBD)**
+- If any changes to assest(s) are required, copy editor will either download, edit and reload, or add  Author Queries (AQs), asking author to resupply during the author proofing process **(TBD)**
 - This task is completed using the ECS tool.
 
 ####Output:
@@ -99,13 +99,13 @@ It is anticipated:
 ##Waiting steps
 
 ####Decision letter and response
-These items are not ready at the point of export. The turnaorund time for them to be produced is 3-5 days. On completion, they will be uploaded to an FTP site, using a specific file naming criteria and will be processed into the article by the vendor.
+These items are not ready at the point of export. The turnaorund time for them to be produced is 3-5 days. On completion, they will be uploaded to an FTP site, using a specific file-naming criteria and will be processed into the article by the vendor.
 
-Note, there can be figures/tables/videos in the author response component.
+Note, there can be figures/tables/videos in the author response.
 We anticipate this step will require input at the vednor end.
 
 ####Digest
-This is the final expected item for an article before it can be delivered to the author. It is a standard piece of smiple content.
+This is the final expected item for an article before it can be delivered to the author. It is a standard piece of simple content.
 Can this be dropped into a placeholder in the article on ECS and checked by eLife production staff before pressing the button to deliver the author email? **TBC**
 
 
@@ -114,11 +114,11 @@ Can this be dropped into a placeholder in the article on ECS and checked by eLif
 ####Expectations:
 - It is anticipated that unless the article has any specific requirements or difficulties, it will process straight to the next stage following on from copy editing or pre-editing.
 - This task is completed using the ECS tool.
-- Do we need another bucket to track the output of this stage? Or shoudl there be no changes therefore it is unnecessary? **TBC**
+- Do we need another bucket to track the output of this stage? Or should there be no changes, making this unnecessary? **TBC**
 
 ####Output:
  email to author containing link to their article on ECS
-- Do we need another bucket to track the output of this stage? Or should there be no changes therefore it is unnecessary? **TBC**
+- Do we need another bucket to track the output of this stage? Or should there be no changes, making this unnecessary? **TBC**
 
 ####Turnaround time:
 NA, unless there is any particular difficulty with the file, in which case it would be 12 hours.
@@ -139,7 +139,7 @@ It is anticipated that most changes will be done automatically, but in rare circ
 At the end of the author correction process all components are zipped up and delivered to an eLife AWS bucket **TBC**
 
 - Zip file name: elife-12345-r1.zip
-- If reprocessed r1 suffix will be replaced with r2 suffix (zipped file). All actual files remain unchanged in naming convention, even if changed.
+- If reprocessed r1 suffix will be replaced with r2 suffix (zipped file). The naming convention for all actual files remains unchanged, even if the files themsleves changed.
 
 ####Turnaround time:
 Authors are given 2 days to complete this process, however, they often take longer.
@@ -158,7 +158,7 @@ eLife production staff vet all changes and where authors have added a comment ra
 At the end of the eLife production QC process all components are zipped up and delivered to an eLife AWS bucket **TBC**
 
 - Zip file name: elife-12345-r1.zip
-- If reprocessed r1 suffix will be replaced with r2 suffix (zipped file). All actual files remain unchanged in naming convention, even if changed.
+- If reprocessed r1 suffix will be replaced with r2 suffix (zipped file). The naming convention for all actual files remains unchanged, even if the files themsleves changed.
 
 ####Turnaround time:
 eLife staff aim to do this task on the day the author submits their corrections.
@@ -179,7 +179,7 @@ If not, they will require another version using the ECS tool to be delivered to 
 All components are zipped up and delivered to an eLife AWS bucket **TBC**
 
 - Zip file name: elife-12345-r1.zip
-- If reprocessed r1 suffix will be replaced with r2 suffix (zipped file). All actual files remain unchanged in naming convention, even if changed.
+- If reprocessed r1 suffix will be replaced with r2 suffix (zipped file). The naming convention for all actual files remains unchanged, even if the files themsleves changed.
 
 
 ####Turnaround time:
