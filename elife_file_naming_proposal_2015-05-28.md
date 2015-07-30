@@ -19,7 +19,16 @@ This is the file id and is the numerical digit that is used to make up part of t
 
 This refers to an asset file related to an article, ie a figure (fig), source code (code), source data (data), media (includes videos, audio and animation) (media), supplementary file (supp), (figures) the figures pdf, reporting standards (repstand).
 
-Should these asset files be present in an appendix or author response, they will take the suffix A or R, respectively before the number, ie: figA or mediaR.
+<span style="color:red">NOTE: Change on 27th July 2015:</span>
+
+Decision letter, author response and Appendix are now at the level of assets:
+dec - decision letter
+resp - author response
+app - appendix
+
+dec and resp do not require a number, but app does as there could be multiple appendices.
+These assets could have any sub assets as below. They will never exist in the file naming heirachy with no sub assets.
+
 
 ###### `<a-id>`
 
