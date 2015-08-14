@@ -2778,7 +2778,7 @@
                             <given-names>T</given-names>
                         </name>
                     </person-group>
-                    <year>2007</year>
+                    <yeariso-8601-date="2007">2007</year>
                     <article-title>Chimaereicella boritolerans sp nov., a boron-tolerant and
                         alkaliphilic bacterium of the family Flavobacteriaceae isolated from
                         soil</article-title>
@@ -2818,7 +2818,7 @@
                             <given-names>RE</given-names>
                         </name>
                     </person-group>
-                    <year>2013</year>
+                    <year iso-8601-date="2013">2013</year>
                     <article-title>Algoriphagus machipongonensis sp. nov. co-isolated with a
                         colonial choanoflagellate</article-title>
                     <source>International journal of systematic and evolutionary
@@ -2853,7 +2853,7 @@
                             <given-names>DL</given-names>
                         </name>
                     </person-group>
-                    <year>2011</year>
+                    <year iso-8601-date="2011">2011</year>
                     <article-title>Membrane sphingolipids as essential molecular signals for
                         bacteroides survival in the intestine</article-title>
                     <source>Proceedings of the National Academy of Sciences of the United States of
@@ -2892,7 +2892,7 @@
                             <given-names>R</given-names>
                         </name>
                     </person-group>
-                    <year>2002</year>
+                    <year iso-8601-date="2002">2002</year>
                     <article-title>Salinibacter ruber gen. nov., sp nov., a novel, extremely
                         halophilic member of the bacteria from saltern crystallizer
                         ponds</article-title>
@@ -2911,7 +2911,7 @@
                             <given-names>MA</given-names>
                         </name>
                     </person-group>
-                    <year>2008</year>
+                    <yeariso-8601-date="2008">2008</year>
                     <article-title>Isolation and characterization of
                         lipopolysaccharides</article-title>
                     <source>Methods in molecular biology</source>
@@ -2928,7 +2928,7 @@
                             <given-names>RM</given-names>
                         </name>
                     </person-group>
-                    <year>2004</year>
+                    <year iso-8601-date="2004">2004</year>
                     <source>Handbook of microbiological media</source>
                     <publisher-name>CRC</publisher-name>
                     <fpage>2051</fpage>
@@ -2958,7 +2958,7 @@
                             <given-names>P</given-names>
                         </name>
                     </person-group>
-                    <year>2001</year>
+                    <year iso-8601-date="2001">2001</year>
                     <article-title>Zobellia galactanovorans gen. nov., sp. nov., a marine species of
                         Flavobacteriaceae isolated from a red alga, and classification of
                         [Cytophaga] uliginosa (ZoBell and Upham 1944) Reichenbach 1989 as Zobellia
@@ -2999,7 +2999,7 @@
                             <given-names>P</given-names>
                         </name>
                     </person-group>
-                    <year>1996</year>
+                    <year iso-8601-date="1996">1996</year>
                     <article-title>Cutting a gordian knot: Emended classification and description of
                         the genus Flavobacterium, emended description of the family
                         Flavobacteriaceae, and proposal of Flavobacterium hydatis nom nov (basonym,
@@ -3084,7 +3084,7 @@
                             <given-names>Y</given-names>
                         </name>
                     </person-group>
-                    <year>1997</year>
+                    <year iso-8601-date="1997">1997</year>
                     <article-title>The complete genome sequence of <italic>Escherichia coli</italic>
                         K-12</article-title>
                     <source>Science</source>
@@ -3106,7 +3106,7 @@
                             <given-names>WJ</given-names>
                         </name>
                     </person-group>
-                    <year>1959</year>
+                    <year iso-8601-date="1959">1959</year>
                     <article-title>A rapid method of total lipid extraction and
                         purification</article-title>
                     <source>Canadian journal of biochemistry and physiology</source>
@@ -3132,7 +3132,7 @@
                             <given-names>JAE</given-names>
                         </name>
                     </person-group>
-                    <year>2003</year>
+                    <year iso-8601-date="2003">2003</year>
                     <article-title>Algoriphagus ratkowskyi gen. nov., sp. nov., Brumimicrobium
                         glaciale gen. nov., sp. nov., Cryomorpha ignava gen. nov., sp. nov. and
                         Crocinitomix catalasitica gen. nov., sp. nov., novel flavobacteria isolated
@@ -3181,7 +3181,7 @@
                             <given-names>L</given-names>
                         </name>
                     </person-group>
-                    <year>2009</year>
+                    <year iso-8601-date="2009">2009</year>
                     <article-title>Fast statistical alignment</article-title>
                     <source>Public Library of Science International Society for Computational
                         Biology</source>
@@ -3261,7 +3261,7 @@
                             <given-names>E</given-names>
                         </name>
                     </person-group>
-                    <year>1961</year>
+                    <year iso-8601-date="1961">1961</year>
                     <article-title>On the sex attractant of silk-moths. I. The biological test and
                         the isolation of the pure sex-attractant bombykol</article-title>
                     <source>Hoppe-Seyler&#x2019;s Zeitschrift f&#xfc;r physiologische
@@ -3284,7 +3284,7 @@
                             <given-names>D</given-names>
                         </name>
                     </person-group>
-                    <year>1957</year>
+                    <year iso-8601-date="1957">1957</year>
                     <article-title>Factors influencing the plate method for determining abundance of
                         bacteria in sea water</article-title>
                     <source>Proceedings of the Society for Experimental Biology and
@@ -3319,7 +3319,7 @@
                             <given-names>SL</given-names>
                         </name>
                     </person-group>
-                    <year>2008</year>
+                    <year iso-8601-date="2008">2008</year>
                     <article-title>Molecular phylogeny of choanoflagellates, the sister group to
                         Metazoa</article-title>
                     <source>Proceedings of the National Academy of Sciences of the United States of
@@ -3338,7 +3338,7 @@
                             <given-names>J</given-names>
                         </name>
                     </person-group>
-                    <year>2000</year>
+                    <year iso-8601-date="2000">2000</year>
                     <article-title>Selection of conserved blocks from multiple alignments for their
                         use in phylogenetic analysis</article-title>
                     <source>Molecular biology and evolution</source>
@@ -3452,7 +3452,7 @@
                             <given-names>J</given-names>
                         </name>
                     </person-group>
-                    <year>2005</year>
+                    <year iso-8601-date="2005">2005</year>
                     <article-title>Extensive DNA Inversions in the B. fragilis Genome Control
                         Variable Gene Expression</article-title>
                     <person-group person-group-type="editor">
@@ -3480,7 +3480,7 @@
                             <given-names>E</given-names>
                         </name>
                     </person-group>
-                    <year>2000</year>
+                    <year iso-8601-date="2000">2000</year>
                     <article-title>Dyadobacter fermentans gen. nov., sp nov., a novel Gram-negative
                         bacterium isolated from surface-sterilized Zea mays stems</article-title>
                     <source>International journal of systematic and evolutionary
@@ -3503,7 +3503,7 @@
                             <given-names>SJ</given-names>
                         </name>
                     </person-group>
-                    <year>2003</year>
+                    <year iso-8601-date="2003">2003</year>
                     <article-title>Croceibacter atlanticus gen. nov., sp. nov., a novel marine
                         bacterium in the family Flavobacteriaceae</article-title>
                     <source>Systematic and applied microbiology</source>
@@ -3525,7 +3525,7 @@
                             <given-names>SJ</given-names>
                         </name>
                     </person-group>
-                    <year>2004</year>
+                    <year iso-8601-date="2004">2004</year>
                     <article-title>Robiginitalea biformata gen. nov., sp. nov., a novel marine
                         bacterium in the family Flavobacteriaceae with a higher G&#x2b;C
                         content</article-title>
@@ -3549,7 +3549,7 @@
                             <given-names>SI</given-names>
                         </name>
                     </person-group>
-                    <year>1960</year>
+                    <year iso-8601-date="1960">1960</year>
                     <article-title>Functional and metabolic properties of polymorphonuclear
                         leucocytes. II. The influence of a lipopolysaccharide
                         endotoxin</article-title>
@@ -3592,7 +3592,7 @@
                             <given-names>N</given-names>
                         </name>
                     </person-group>
-                    <year>2011</year>
+                    <year iso-8601-date="2011">2011</year>
                     <article-title>Cell differentiation and morphogenesis in the colony-forming
                         choanoflagellate Salpingoeca rosetta</article-title>
                     <source>Developmental biology</source>
@@ -3622,7 +3622,7 @@
                             <given-names>A</given-names>
                         </name>
                     </person-group>
-                    <year>1992</year>
+                    <year iso-8601-date="1992">1992</year>
                     <article-title>Peptidoglycan composition in heterogeneous Tn551 mutants of a
                         methicillin-resistant Staphylococcus aureus strain</article-title>
                     <source>The Journal of biological chemistry</source>
@@ -3675,7 +3675,7 @@
                             <given-names>GL</given-names>
                         </name>
                     </person-group>
-                    <year>2006</year>
+                    <year iso-8601-date="2006">2006</year>
                     <article-title>Greengenes, a chimera-checked 16S rRNA gene database and
                         workbench compatible with ARB</article-title>
                     <source>Applied and environmental microbiology</source>
@@ -3697,7 +3697,7 @@
                             <given-names>J</given-names>
                         </name>
                     </person-group>
-                    <year>2011</year>
+                    <year iso-8601-date="2011">2011</year>
                     <article-title>Root nodulation: a paradigm for how plant-microbe symbiosis
                         influences host developmental pathways</article-title>
                     <source>Cell host and microbe</source>
@@ -3719,7 +3719,7 @@
                             <given-names>W</given-names>
                         </name>
                     </person-group>
-                    <year>1994</year>
+                    <year iso-8601-date="1994">1994</year>
                     <article-title>Sulfonolipid content of Cytophaga and Flexibacter species
                         isolated from soil and cultured under different Nutrient andtemperature
                         regimes</article-title>
@@ -3746,7 +3746,7 @@
                             <given-names>ER</given-names>
                         </name>
                     </person-group>
-                    <year>1968</year>
+                    <year iso-8601-date="1968">1968</year>
                     <article-title>Listeria monocytogenes L forms. I. Induction maintenance, and
                         biological characteristics</article-title>
                     <source>Journal of bacteriology</source>
