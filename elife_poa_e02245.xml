@@ -64,9 +64,18 @@
 					</aff>
 				</contrib>
 			</contrib-group>
-			<elocation-id>e02245</elocation-id>
+			<pub-date date-type="pub" publication-format="electronic">
+				<day>07</day>
+				<month>01</month>
+				<year>2015</year>
+			</pub-date>
+			<elocation-id>e04996</elocation-id>
+			<supplementary-material>
+				<ext-link xlink:href="elife-04996-supp-v1.zip">Download zip</ext-link>
+				<p>Any figures and tables for this article are included in the PDF. The zip folder contains additional supplemental files.</p>
+					</supplementary-material>
 			<history>
-				<date date-type="received">
+					<date date-type="received">
 					<day>08</day>
 					<month>01</month>
 					<year>2014</year>
