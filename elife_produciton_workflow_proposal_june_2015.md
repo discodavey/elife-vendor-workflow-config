@@ -53,7 +53,7 @@ The XML metadata is the source of truth for other metadata outputs, eg Funding i
 
 This task is completed using the ECS tool.
 
-For more detailed description of the pre-editing process see **XXX**.
+For more detailed description of the pre-editing process see **ExeterPremedia please provide**.
 
 ####Output:
 
