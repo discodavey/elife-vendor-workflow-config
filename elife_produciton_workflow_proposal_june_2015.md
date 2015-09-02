@@ -64,7 +64,7 @@ For more detailed description of the pre-editing process see **ExeterPremedia pl
 - Rare, but if reprocessed r1 suffix will be replaced with r2 suffix (zipped file). All actual files remain unchanged in naming convention, even if changed.
 
 ####Turnaround time:
-It is expected this process will take 15 minutes of operator time. **TBC**
+It is expected this process will take 15 minutes of operator time.
 The allowed time for the vendor is 24 hours to complete this step.
 
 ####Volume:
