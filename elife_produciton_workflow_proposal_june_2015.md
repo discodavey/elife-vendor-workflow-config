@@ -43,21 +43,23 @@ Asset files can be any combination of the following:
 - source code 
 - source data 
 - reporting standards 
-- appendix asset file, for example figure
-- author response asset file, for example figure
+- appendix asset file, for example, figure
+- author response asset file, for example, figure
 
 ####Expectations:
 At the start of this process the Word/LaTex file is converted to an HTML file, and overlaid on the XML metadata output to cross check. 
 
-Any conflicts in the information result in an output file to the production team to check, but the Word/LaTex source file is considered the source of truth for author and affiliation information.
+Any conflicts in the information result in an output file to the production team to check, but the Word/LaTex source file is considered the source of truth for author and affiliation information. 
 
-The XML metadata is the source of truth for other metadata outputs, eg Funding information, copyright, conflict of interest, contribution.
+**ExeterPremedia please confirm the process - will this be a downlaod from ECS or an email delivery or shall we set up an AWS bucket for this?**
+
+The XML metadata is the source of truth for other metadata outputs, eg Funding information, copyright, conflict of interest, contribution. See <https://github.com/elifesciences/elife-vendor-workflow-config/blob/master/eLife%20JATS%20processing%20instructions%20xml.xlsx>
 
 This task is completed using the ECS tool.
 
-Track changes - only italicisation from pre-editing needs to be available for author to view, with copy edited changes.
+Track changes - only italicisation from pre-editing needs to be available for author to view, with copy edited changes. **ExeterPremedia please confirm**
 
-For more detailed description of the pre-editing process see **ExeterPremedia please provide**.
+For more detailed description of the pre-editing process see: **ExeterPremedia please provide**.
 
 ####Output:
 At the end of the pre-editing process all components are zipped up and delivered to an eLife AWS bucket: elife-production-preedited
@@ -68,9 +70,9 @@ A SOAP message is delivered to PaW to push the article onto the next stage. This
 - All asset files are converted/sized/renamed as appropriate
 - Zip file name: elife-12345-r1.zip
 - Rare, but if reprocessed r1 suffix will be replaced with r2 suffix (zipped file). All actual files remain unchanged in naming convention, even if changed
-- SOAP message to PaW to move article to next stage.
+- SOAP message to PaW to move article to next stage: 
 
-Please see EJP processing instructions in the XML metadata output to determine which level of copy editing is required:
+Please see EJP processing instructions in the XML metadata output to determine which level of copy editing is required (<https://github.com/elifesciences/elife-vendor-workflow-config/blob/master/eLife%20JATS%20processing%20instructions%20xml.xlsx>):
 
 `<custom-meta><meta-name>Copy editing requirement</meta-name><meta-value>2</meta-value></custom-meta<custom-meta>`
 Values 0 and 1 require pre-editing only
@@ -202,7 +204,7 @@ All research articles have a Digest.
 ##Proof to author
 
 ####Expectations:
-There is a temporary stage after all content is ready "Publisher: OK proof to author" - this is a transition stage and will be removed once processes are bedded in.
+There is a temporary stage after all content is ready "Publisher: OK proof to author" - this is potentially transition stage and will be removed once processes are bedded in.
 
 **Questions to ExeterPremedia: Should production move it via ECS and you send a message to PaW?**
 
@@ -261,7 +263,7 @@ All content will go through this process.
 eLife production staff vet all changes and where authors have added a comment rather than an edit, which can be easily changed, eLife staff will do this in order to keep automation optimised. 
 
 ####Output:
-At the end of the eLife production QC process all components are zipped up and delivered to an eLife AWS bucket: elife-production-productionchecked **TBC**
+At the end of the eLife production QC process all components are zipped up and delivered to an eLife AWS bucket: elife-production-productionchecked
 
 - Zip file name: elife-12345-r1.zip
 - If reprocessed r1 suffix will be replaced with r2 suffix (zipped file). The naming convention for all actual files remains unchanged, even if the files themsleves changed.
@@ -273,7 +275,7 @@ eLife staff aim to do this task on the day the author submits their corrections.
 All content will go through this process.
 
 ####PaW workflow exceptions:
-Feature content goes through an additional step before the content is returned to the production staff: Publisher: Feature staff check author changes
+Feature content goes through an additional step before the content is returned to the production staff: Publisher: Feature staff check author changes. The output from this stage is also required to be sent to it's onw AWS bucket: elife-production-featurechecked
 
 **Questions to ExeterPremedia: Will you add this step on ECS for feature content only?**
 
@@ -286,19 +288,17 @@ If not, they will require another version using the ECS tool to be delivered to 
 
 If another version is required the results of the author/production QC steps should move the content to Content processor: Deliver revised ECS view in PaW via a SOAP feed.
 Once available to production again they should be moved on PaW to Publisher: Check final version.
+The output from this stage is also required to be sent to it's onw AWS bucket: elife-production-revised
+Rare, but if reprocessed r1 suffix will be replaced with r2 suffix (zipped file). All actual files remain unchanged in naming convention, even if changed
 
-If another version is not required  the results of the authour/production QC process move to:  Publisher: Ready to load online in PaW via a SOAP feed.
+If another version is NOT required  the results of the authour/production QC process move to:  Publisher: Ready to load online in PaW via a SOAP feed.
 
 There is another stage that indicated delivery of final files to the final AWS bucket:
 The production staff need to move the content to Content processor: Upload online.
 
-Once this is moved, the output is finalised and publication ready.
+Once this is moved, the output is finalised and publication ready. All components are zipped up and delivered to an eLife AWS bucket: elife-production-final
 
-####Output:
-All components are zipped up and delivered to an eLife AWS bucket: elife-production-final
-
-- Zip file name: elife-12345-r1.zip
-- If reprocessed r1 suffix will be replaced with r2 suffix (zipped file). The naming convention for all actual files remains unchanged, even if the files themsleves changed.
+This will basically be a repeat of the most recent version that was delivered to elife-production-revised, but the delivery to AWS bucket: elife-production-final will be the trigger to the eLife production system to start the publication process.
 
 
 ####Turnaround time:
@@ -307,11 +307,6 @@ If on final sign off manual intervention is required by vendor before delivery t
 
 ####Volume:
 Expectation is that less than 10% of content will go through this process.
-
-
-##final delivery of files - process
-There needs to be a mechanism of either informing the publishing platform to pick up the files from the revisions bucket OR for the final sign off from production to be the indication that final files should be delivered somewhere different, to kick off the publishing process.
-The production system knows to strip/ignore the revision number from the zip file, this is only used for production tracking of content.
 
 ##Non research article content
 The key components of non-research content are:
