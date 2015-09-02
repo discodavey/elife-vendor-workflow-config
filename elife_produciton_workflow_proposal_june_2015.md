@@ -122,10 +122,20 @@ It is anticipated:
 - 10% will be copy edited onshore by eLife UK freelancers.
 
 
+####Publisher: Check content
+Once content is copy edited it is moved to this queue by ExeterPremedia.
+eLife production staff will review the content and then it will move to the next stage.
+We anticipate this stage is a transition stage only and will be removed once everything is bedded in.
+
+**Questions to ExeterPremedia:
+1 - Should production move it via ECS and you send a message to PaW?**
+
+
+
 ##Decision letter and response
 
 ####Expectations:
-These items are not ready at the point of export. The turnaorund time for them to be produced is 3-5 days. On completion, they will be delivered by email using a template email.
+These items are not ready at the point of export. The tunraround time for them to be produced is 3-5 days. On completion, they will be delivered by email using a template email.
 When these are delivered they should be moved to Publisher: Deliver letters on 
 
 Note, there can be figures/tables/videos in the author response.
