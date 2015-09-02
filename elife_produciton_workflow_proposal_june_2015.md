@@ -4,8 +4,8 @@ See <https://github.com/elifesciences/elife-vendor-workflow-config/blob/master/e
 for file naming requirements.
 
 ######General note on turnaround times:
-The vendor works until 4pm UK time.
-Therefore, where their turnaround times are specified in hours, this excludes the period of from 4pm UK time to 4am UK time the following day. **TBC**
+The vendor works until 3.30pm UK time.
+Therefore, where their turnaround times are specified in hours, this excludes the period of from 3.30pm UK time to 3.30am UK time the following day.
 The vendor works on Saturdays, but not Sundays and not Indian Bank holidays - a list of which will be supplied.
 
 
