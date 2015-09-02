@@ -28,8 +28,8 @@ There is no additional charge.
 Export from submission system:
 
 1. XML metadata file
-2. author Word file
-3. PDF representation of that Word file and figure asset files
+2. author Word/LaTex file
+3. PDF representation of that Word/LaTex file and figure asset files
 4. asset files
 
 Asset files can be any combination of the following: 
