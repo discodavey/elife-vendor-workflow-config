@@ -66,7 +66,20 @@ A SOAP message is delivered to PaW to push the article onto the next stage. This
 - All asset files are converted/sized/renamed as appropriate
 - Zip file name: elife-12345-r1.zip
 - Rare, but if reprocessed r1 suffix will be replaced with r2 suffix (zipped file). All actual files remain unchanged in naming convention, even if changed
-- SOAP message to PaW to move article to next stage
+- SOAP message to PaW to move article to next stage.
+
+Please see EJP processing instructions in the XML metadata output to determine which level of copy editing is required:
+
+`<custom-meta><meta-name>Copy editing requirement</meta-name><meta-value>2</meta-value></custom-meta<custom-meta>`
+Values 0 and 1 require pre-editing only
+Value 2 is an ExeterPremedia copy edit
+value 3 is an eLife UK freelance copy edit
+
+Note: The SOAP message to PaW depends on what level of copy editing is required.
+
+If NO copy editing required the article should be moved to: Publisher: Check content
+If ExeterPremedia copy editing required, should be moved to: Copyeditor: Copy edit
+If external freelance copyediting required, should be moved to: Publisher: Assign copy editor
 
 ####Turnaround time:
 It is expected this process will take 15 minutes of operator time.
@@ -90,6 +103,8 @@ Please see EJP processing instructions in the XML metadata output to determine w
 - If any changes to assest(s) are required, copy editor will either download, edit and reload, or add  Author Queries (AQs), asking author to resupply during the author proofing process 
 - All copy editing changes are tracked and are available to the author and production to view when checking the proof.
 
+ 
+
 ####Output:
 At the end of the copy editing process all components are zipped up and delivered to an eLife AWS bucket: elife-production-copyedited
 
@@ -99,6 +114,10 @@ At the end of the copy editing process all components are zipped up and delivere
 - Zip file name: elife-12345-r1.zip
 - Rare, but if reprocessed r1 suffix will be replaced with r2 suffix (zipped file). All actual files remain unchanged in naming convention, even if changed
  - SOAP message to PaW to move article to next stage
+ 
+Note: The SOAP message to PaW depends on what level of copy editing is required.
+If NO copy editing required
+Copyeditor: Copy editPublisher: Check contentPublisher: Assign copy editorCopyeditor: Copy editPublisher: Check content
 
 ####Turnaround time:
 
