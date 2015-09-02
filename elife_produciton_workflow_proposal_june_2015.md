@@ -88,6 +88,11 @@ The allowed time for the vendor is 24 hours to complete this step.
 ####Volume:
 It is anticipated that at current publishing volumes up to 5 articles coupld be accepted on one day. However, there are peaks and troughs and we have seen periods of days without acceptances and instances of bunching up where 7-8 have been accepted in one day.
 
+
+####Exceptions:
+
+
+
 ## Copy editing
 
 ####Expectations:
@@ -170,8 +175,34 @@ Most research content has a decision letter and response, but occassionally an a
 **Questions to ExeterPremedia: How should we indicate to you if either/both these items are not going to be published and can you automatically skip the Publisher: Deliver lettersContent processor: Process letters stages on PaW?**
 
 ##Digest
-This is the final expected item for an article before it can be delivered to the author. It is a standard piece of simple content.
-Can this be dropped into a placeholder in the article on ECS and checked by eLife production staff before pressing the button to deliver the author email? **TBC**
+####Expectations:
+This is the final expected item for a research article before it can be delivered to the author. It is a standard piece of simple content.
+
+It will be delivered by email using a template email.
+When delivered it should process automatically into the article and the article moved to the next stage.
+
+####Output:
+
+- Deliver Word file of Digest to eLife AWS bucket: elife-production-digest
+- SOAP message to PaW to move article to next stage: Publisher: OK proof to author
+
+####Turnaround time:
+
+- If there are no problems, this should process automaticallly. If there are complications we request a 6 h turnaround time.
+
+**Questions to ExeterPremedia: Is that TAT OK?**
+
+####Volume:
+All research articles have a Digest.
+
+
+
+
+
+
+
+
+
 
 
 ##Proof to author
