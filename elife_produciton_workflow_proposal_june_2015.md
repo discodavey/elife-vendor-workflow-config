@@ -61,7 +61,8 @@ For more detailed description of the pre-editing process see **ExeterPremedia pl
 - All asset files are converted/sized/renamed as appropriate
 - At the end of this process all components are zipped up and delivered to an eLife AWS bucket: elife-production-preedited
 - Zip file name: elife-12345-r1.zip
-- Rare, but if reprocessed r1 suffix will be replaced with r2 suffix (zipped file). All actual files remain unchanged in naming convention, even if changed.
+- Rare, but if reprocessed r1 suffix will be replaced with r2 suffix (zipped file). All actual files remain unchanged in naming convention, even if changed
+- SOAP message to PaW to move article to next stage
 
 ####Turnaround time:
 It is expected this process will take 15 minutes of operator time.
