@@ -45,7 +45,11 @@ Asset files can be any combination of the following:
 - author response asset file, for example figure
 
 ####Expectations:
-At the start of this process the Word file is converted to an HTML file, and overlaid on the XML metadata output to cross check. Any confilicting metadata is added as a query for eLife staff or author. **TBD whether eLife staff see proofs before delivery to author** - anticipate initially we'll have this step in the workflow.
+At the start of this process the Word/LaTex file is converted to an HTML file, and overlaid on the XML metadata output to cross check. 
+
+Any conflicts in the information result in an output file to the production team to check, but the Word/LaTex source file is considered the source of truth for author and affiliation information.
+
+The XML metadata is the source of truth for other metadata outputs, eg Funding information, copyright, conflict of interest, contribution.
 
 This task is completed using the ECS tool.
 
