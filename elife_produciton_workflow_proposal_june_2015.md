@@ -226,13 +226,18 @@ All content will go thorugh this process
 Author will edit their content, move components around on the PDF representation view, and potentially upload new versions of figures, videos etc.
 It is anticipated that most changes will be done automatically, but in rare circumstances the author will not be able to directly input their changes and regenerate their proof.
 
-**Could we add an SLA that 90% will not require additional intervention?**
+**Could we add an SLA that 90% will not require additional intervention by ExeterPremedia?**
 
 ####Output:
-At the end of the author correction process all components are zipped up and delivered to an eLife AWS bucket
+At the end of the author correction process all components are zipped up and delivered to an eLife AWS bucket: elife-production-authorproof
 
+- XML file 
+- PDF file
+- PDF figures fix
+- Asset files of the author response component are converted/sized/renamed as appropriate
 - Zip file name: elife-12345-r1.zip
-- If reprocessed r1 suffix will be replaced with r2 suffix (zipped file). The naming convention for all actual files remains unchanged, even if the files themsleves changed.
+- Rare, but if reprocessed r1 suffix will be replaced with r2 suffix (zipped file). All actual files remain unchanged in naming convention, even if changed
+- SOAP message to PaW to move article to next stage: Publisher: Check author changes
 
 ####Turnaround time:
 Authors are given 2 days to complete this process, however, they often take longer.
@@ -240,6 +245,9 @@ We'd like automatic chasing mechanisms to be inplemented. Details of which **TBC
 
 ####Volume:
 All content will go through this process.
+
+
+
 
 ##eLife production staff QC
 
