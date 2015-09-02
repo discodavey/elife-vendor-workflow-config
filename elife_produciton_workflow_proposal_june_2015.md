@@ -221,7 +221,6 @@ All content will go thorugh this process
 
 ##Author corrections
 
-
 ####Expectations:
 Author will edit their content, move components around on the PDF representation view, and potentially upload new versions of figures, videos etc.
 It is anticipated that most changes will be done automatically, but in rare circumstances the author will not be able to directly input their changes and regenerate their proof.
@@ -248,15 +247,13 @@ All content will go through this process.
 
 
 
-
 ##eLife production staff QC
-
 
 ####Expectations:
 eLife production staff vet all changes and where authors have added a comment rather than an edit, which can be easily changed, eLife staff will do this in order to keep automation optimised. 
 
 ####Output:
-At the end of the eLife production QC process all components are zipped up and delivered to an eLife AWS bucket **TBC**
+At the end of the eLife production QC process all components are zipped up and delivered to an eLife AWS bucket: elife-production-productionchecked **TBC**
 
 - Zip file name: elife-12345-r1.zip
 - If reprocessed r1 suffix will be replaced with r2 suffix (zipped file). The naming convention for all actual files remains unchanged, even if the files themsleves changed.
@@ -266,6 +263,12 @@ eLife staff aim to do this task on the day the author submits their corrections.
 
 ####Volume:
 All content will go through this process.
+
+####PaW workflow exceptions:
+Feature content goes through an additional step before the content is returned to the production staff: Publisher: Feature staff check author changes
+
+**Questions to ExeterPremedia: Will you add this step on ECS for feature content only?**
+
 
 
 ##final delivery of files
