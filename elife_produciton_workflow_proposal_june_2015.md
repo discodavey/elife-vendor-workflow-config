@@ -59,9 +59,9 @@ For more detailed description of the pre-editing process see **XXX**.
 
 - The HTML file can output publishable eLife JATS XML any time once this process is complete
 - All asset files are converted/sized/renamed as appropriate
-- At the end of this process all components are zipped up and delivered to an eLife AWS bucket **TBC**
+- At the end of this process all components are zipped up and delivered to an eLife AWS bucket: elife-production-preedited
 - Zip file name: elife-12345-r1.zip
-- Rare, but if reprocessed r1 suffix will be replaced with r2 suffix (zipped file). All actural files remain unchanged in naming convention, even if changed.
+- Rare, but if reprocessed r1 suffix will be replaced with r2 suffix (zipped file). All actual files remain unchanged in naming convention, even if changed.
 
 ####Turnaround time:
 It is expected this process will take 15 minutes of operator time. **TBC**
