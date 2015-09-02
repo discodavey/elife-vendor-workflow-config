@@ -92,18 +92,11 @@ It is anticipated that at current publishing volumes up to 5 articles coupld be 
 
 ####Expectations:
 
-Please see EJP processing instructions in the XML metadata output to determine which level of copy editing is required:
-
-`<custom-meta><meta-name>Copy editing requirement</meta-name><meta-value>2</meta-value></custom-meta<custom-meta>`
-Values 0 and 1 require pre-editing only
-Value 2 is an ExeterPremedia copy edit
-value 3 is an eLife UK freelance copy edit
-
 - Copy editor edits on ECS, and all components of the article are available when editing
 - If any changes to assest(s) are required, copy editor will either download, edit and reload, or add  Author Queries (AQs), asking author to resupply during the author proofing process 
 - All copy editing changes are tracked and are available to the author and production to view when checking the proof.
 
- 
+If level 3 copy editing required, Production staff will manually move the article from Publisher: Assign copy editor to Copyeditor: Copy edit, when they have a copy editor tasked with the job.
 
 ####Output:
 At the end of the copy editing process all components are zipped up and delivered to an eLife AWS bucket: elife-production-copyedited
@@ -113,11 +106,8 @@ At the end of the copy editing process all components are zipped up and delivere
 - At the end of this process all components are zipped up and delivered to an eLife AWS bucket: elife-production-preedited
 - Zip file name: elife-12345-r1.zip
 - Rare, but if reprocessed r1 suffix will be replaced with r2 suffix (zipped file). All actual files remain unchanged in naming convention, even if changed
- - SOAP message to PaW to move article to next stage
+ - SOAP message to PaW to move article to next stage: Publisher: Check content
  
-Note: The SOAP message to PaW depends on what level of copy editing is required.
-If NO copy editing required
-Copyeditor: Copy editPublisher: Check contentPublisher: Assign copy editorCopyeditor: Copy editPublisher: Check content
 
 ####Turnaround time:
 
