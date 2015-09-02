@@ -14,9 +14,11 @@ Indian Bank holidays - a list of which will be supplied.
 ###PoA
 ExeterPremedia complete export checks on EJP for PoA content before export from the "Post Acceptance Check" queue on EJP. This involves ensuring all the data held in the submissions screens is correct and that all the asset files are correctly named.
 This is required for the PoA workflow that eLife manages via Amazon Web Services (AWS) - the data from the submission screens is exported as CSV files, which are read to create PoA XML.
+The charge for this process is £5 per article.
 
 ###VoR
 If an article skips PoA and goes traight to the "Export System" eLife staff will export without any checks and all checks will occur at pre-editing.
+There is no additional charge.
 
 
 ## Pre-editing
