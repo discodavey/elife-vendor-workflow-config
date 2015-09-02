@@ -207,7 +207,14 @@ There is a temporary stage after all content is ready "Publisher: OK proof to au
 **Questions to ExeterPremedia: Can the Figures PDF be incorporated into the author proof stage on ECS?**
 
 ####Output:
-email to author containing link to their article on ECS
+- email to author containing link to their article on ECS
+- all components are zipped up and delivered to an eLife AWS bucket: elife-production-authorproof
+- XML file 
+- PDF file
+- PDF figures fix
+- Asset files of the author response component are converted/sized/renamed as appropriate
+- Zip file name: elife-12345-r1.zip
+- Rare, but if reprocessed r1 suffix will be replaced with r2 suffix (zipped file). All actual files remain unchanged in naming convention, even if changed
 - SOAP message to PaW to move article to next stage: Publisher: OK proof to author
 
 
@@ -228,8 +235,7 @@ It is anticipated that most changes will be done automatically, but in rare circ
 **Could we add an SLA that 90% will not require additional intervention by ExeterPremedia?**
 
 ####Output:
-At the end of the author correction process all components are zipped up and delivered to an eLife AWS bucket: elife-production-authorproof
-
+At the end of the author correction process all components are zipped up and delivered to an eLife AWS bucket: elife-production-authorcorrected
 - XML file 
 - PDF file
 - PDF figures fix
@@ -279,9 +285,15 @@ If not, they will require another version using the ECS tool to be delivered to 
 If another version is required the results of the author/production QC steps should move the content to Content processor: Deliver revised ECS view in PaW via a SOAP feed.
 Once available to production again they should be moved on PaW to Publisher: Check final version.
 
+If another version is not required  the results of the authour/production QC process move to:  Publisher: Ready to load online in PaW via a SOAP feed.
+
+There is another stage that indicated delivery of final files to the final AWS bucket:
+The production staff need to move the content to Content processor: Upload online.
+
+Once this is moved, the output is finalised and publication ready.
 
 ####Output:
-All components are zipped up and delivered to an eLife AWS bucket **TBC**
+All components are zipped up and delivered to an eLife AWS bucket: elife-production-final
 
 - Zip file name: elife-12345-r1.zip
 - If reprocessed r1 suffix will be replaced with r2 suffix (zipped file). The naming convention for all actual files remains unchanged, even if the files themsleves changed.
