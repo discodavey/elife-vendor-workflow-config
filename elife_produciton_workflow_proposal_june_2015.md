@@ -93,18 +93,19 @@ At the end of the copy editing process all components are zipped up and delivere
 - All asset files are converted/sized/renamed as appropriate
 - At the end of this process all components are zipped up and delivered to an eLife AWS bucket: elife-production-preedited
 - Zip file name: elife-12345-r1.zip
-- Rare, but if reprocessed r1 suffix will be replaced with r2 suffix (zipped file). All actual files remain unchanged in naming convention, even if changed.
+- Rare, but if reprocessed r1 suffix will be replaced with r2 suffix (zipped file). All actual files remain unchanged in naming convention, even if changed
+ - SOAP message to PaW to move article to next stage
 
 ####Turnaround time:
 
-- The allowed time for the vendor is 2 days to complete this step.
+- The allowed time for the vendor/freelance copy editor is 2 days to complete this step.
 
 ####Volume:
 
 It is anticipated:
 
-- 50% of content will require copy editing by the vendor
-- 40% will not require a copy edit
+- 60% of content will require copy editing by the vendor
+- 30% will not require a copy edit
 - 10% will be copy edited onshore by eLife UK freelancers.
 
 ##Waiting steps
