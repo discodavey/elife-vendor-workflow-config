@@ -94,7 +94,6 @@ No feature content is copy edited or expects Decision Letter/Response or Digest.
 Therefore, for all feature content move on PaW from Content processor: Pre-edit file to Publisher: OK proof to author.
 
 
-
 ## Copy editing
 
 ####Expectations:
@@ -148,7 +147,7 @@ Note, there can be figures/tables/videos in the author response.
 We anticipate this step will require input at the vendor end.
 There is a slim chance that these items are delivered before the content reaches Publisher: check content.
 
-**Questions to ExeterPremedia: How should we dela with this in SOAP messages?**
+**Questions to ExeterPremedia: How should we deal with this in SOAP messages?**
 
 
 ####Output:
@@ -198,28 +197,22 @@ When delivered it should process automatically into the article and the article 
 All research articles have a Digest.
 
 
-
-
-
-
-
-
-
-
-
 ##Proof to author
 
 ####Expectations:
-- It is anticipated that unless the article has any specific requirements or difficulties, it will process straight to the next stage following on from copy editing or pre-editing.
-- This task is completed using the ECS tool.
-- Do we need another bucket to track the output of this stage? Or should there be no changes, making this unnecessary? **TBC**
+There is a temporary stage after all content is ready "Publisher: OK proof to author" - this is a transition stage and will be removed once processes are bedded in.
+
+**Questions to ExeterPremedia: Should production move it via ECS and you send a message to PaW?**
+
+**Questions to ExeterPremedia: Can the Figures PDF be incorporated into the author proof stage on ECS?**
 
 ####Output:
- email to author containing link to their article on ECS
-- Do we need another bucket to track the output of this stage? Or should there be no changes, making this unnecessary? **TBC**
+email to author containing link to their article on ECS
+- SOAP message to PaW to move article to next stage: Publisher: OK proof to author
+
 
 ####Turnaround time:
-NA, unless there is any particular difficulty with the file, in which case it would be 12 hours.
+NA
 
 
 ####Volume:
@@ -230,11 +223,13 @@ All content will go thorugh this process
 
 
 ####Expectations:
-Author will edit their content, move components around on the PDF representation view, and potentially upload new versions of figures.
+Author will edit their content, move components around on the PDF representation view, and potentially upload new versions of figures, videos etc.
 It is anticipated that most changes will be done automatically, but in rare circumstances the author will not be able to directly input their changes and regenerate their proof.
 
+**Could we add an SLA that 90% will not require additional intervention?**
+
 ####Output:
-At the end of the author correction process all components are zipped up and delivered to an eLife AWS bucket **TBC**
+At the end of the author correction process all components are zipped up and delivered to an eLife AWS bucket
 
 - Zip file name: elife-12345-r1.zip
 - If reprocessed r1 suffix will be replaced with r2 suffix (zipped file). The naming convention for all actual files remains unchanged, even if the files themsleves changed.
