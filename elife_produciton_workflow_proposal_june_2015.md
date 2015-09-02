@@ -57,7 +57,7 @@ For more detailed description of the pre-editing process see **ExeterPremedia pl
 
 ####Output:
 
-- The HTML file can output publishable eLife JATS XML any time once this process is complete
+- HTML file - follow file naming convention with .html suffix
 - All asset files are converted/sized/renamed as appropriate
 - At the end of this process all components are zipped up and delivered to an eLife AWS bucket: elife-production-preedited
 - Zip file name: elife-12345-r1.zip
