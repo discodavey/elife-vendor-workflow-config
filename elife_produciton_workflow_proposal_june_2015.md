@@ -89,7 +89,9 @@ The allowed time for the vendor is 24 hours to complete this step.
 It is anticipated that at current publishing volumes up to 5 articles coupld be accepted on one day. However, there are peaks and troughs and we have seen periods of days without acceptances and instances of bunching up where 7-8 have been accepted in one day.
 
 
-####Exceptions:
+####PaW workflow exceptions:
+No feature content is copy edited or expects Decision Letter/Response or Digest.
+Therefore, for all feature content move on PaW from Content processor: Pre-edit file to Publisher: OK proof to author.
 
 
 
