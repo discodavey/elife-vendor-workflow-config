@@ -121,15 +121,24 @@ It is anticipated:
 - 30% will not require a copy edit
 - 10% will be copy edited onshore by eLife UK freelancers.
 
-##Waiting steps
 
-####Decision letter and response
-These items are not ready at the point of export. The turnaorund time for them to be produced is 3-5 days. On completion, they will be uploaded to an FTP site, using a specific file-naming criteria and will be processed into the article by the vendor.
+##Decision letter and response
+
+####Expectations:
+These items are not ready at the point of export. The turnaorund time for them to be produced is 3-5 days. On completion, they will be delivered by email using a template email.
+When these are delivered they should be moved to Publisher: Deliver letters on 
 
 Note, there can be figures/tables/videos in the author response.
 We anticipate this step will require input at the vednor end.
 
-####Digest
+
+
+####Output:
+
+####Turnaround time:
+####Volume:
+
+##Digest
 This is the final expected item for an article before it can be delivered to the author. It is a standard piece of simple content.
 Can this be dropped into a placeholder in the article on ECS and checked by eLife production staff before pressing the button to deliver the author email? **TBC**
 
