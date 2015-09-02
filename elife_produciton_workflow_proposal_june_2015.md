@@ -270,13 +270,14 @@ Feature content goes through an additional step before the content is returned t
 **Questions to ExeterPremedia: Will you add this step on ECS for feature content only?**
 
 
-
 ##final delivery of files
 
-
 ####Expectations:
-Unless there are changes that cannot be automated in the above two steps, there will be no need to see a revision and eLife staff should be able to automate delivery of final content at the end of their process.
+Unless there are changes that cannot be automated in the above step, there will be no need to see a revision and eLife staff should be able to automate delivery of final content at the end of their process.
 If not, they will require another version using the ECS tool to be delivered to them, and this will or will not be shared with the author.
+
+If another version is required the results of the author/production QC steps should move the content to Content processor: Deliver revised ECS view in PaW via a SOAP feed.
+Once available to production again they should be moved on PaW to Publisher: Check final version.
 
 
 ####Output:
@@ -291,7 +292,8 @@ If revision cycles occur, expected redelivery of content throguh ECS to Producti
 If on final sign off manual intervention is required by vendor before delivery to the online platform, 6 hours is allowed for this process.
 
 ####Volume:
-All content will go through this process.
+Expectation is that less than 10% of content will go through this process.
+
 
 ##final delivery of files - process
 There needs to be a mechanism of either informing the publishing platform to pick up the files from the revisions bucket OR for the final sign off from production to be the indication that final files should be delivered somewhere different, to kick off the publishing process.
