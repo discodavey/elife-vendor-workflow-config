@@ -2778,7 +2778,7 @@
                             <given-names>T</given-names>
                         </name>
                     </person-group>
-                    <yeariso-8601-date="2007">2007</year>
+                    <year iso-8601-date="2007">2007</year>
                     <article-title>Chimaereicella boritolerans sp nov., a boron-tolerant and
                         alkaliphilic bacterium of the family Flavobacteriaceae isolated from
                         soil</article-title>
@@ -2911,7 +2911,7 @@
                             <given-names>MA</given-names>
                         </name>
                     </person-group>
-                    <yeariso-8601-date="2008">2008</year>
+                    <year iso-8601-date="2008">2008</year>
                     <article-title>Isolation and characterization of
                         lipopolysaccharides</article-title>
                     <source>Methods in molecular biology</source>
@@ -6144,6 +6144,7 @@
                     <fpage>865</fpage>
                     <lpage>870</lpage>
                     <pub-id pub-id-type="doi">10.1099/ijs.0.63479-0</pub-id>
+                    <pub-id pub-id-type="pmid">1234566</pub-id>
                 </element-citation>
             </ref>
             <ref id="bib100">
