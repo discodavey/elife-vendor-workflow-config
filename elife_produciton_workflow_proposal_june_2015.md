@@ -10,20 +10,14 @@ Indian Bank holidays - a list of which will be supplied.
 
 
 ##Export process
-Currently ExeterPremedia complete export checks on EJP. This involves ensuring all the data held in the submissions screens is correct, and missing data is held in a red stucky note for export, and that all the asset files are correctly named.
-This is required for the PoA wokrflow that eLife manages via Amazon Web Services (AWS) and also for the export of content to TNQ for full content processing.
 
-Currently, approximately 23% of author names and affiliations are either changed on export or are not contained as structured information within the EJP database and are only stored as notes, so there is not really a requirement to maintain this data as cleanly as we do on EJP.
+###PoA
+ExeterPremedia complete export checks on EJP for PoA content before export from the "Post Acceptance Check" queue on EJP. This involves ensuring all the data held in the submissions screens is correct and that all the asset files are correctly named.
+This is required for the PoA workflow that eLife manages via Amazon Web Services (AWS) - the data from the submission screens is exported as CSV files, which are read to create PoA XML.
 
-The proposal is that on acceptance, all content is exported straight to ExeterPremedia and they use the XML export and the author's Word file to build the html of the article, which commences the production workflow. Where there are differences in the data, this is resolved here.
+###VoR
+If an article skips PoA and goes traight to the "Export System" eLife staff will export without any checks and all checks will occur at pre-editing.
 
-######_Problems_
-- FundRef database is contained within EJP and that many funding details are changed during this process
-- The PoA workflow is reliant on CSV output from EJP to puld the XML
-
-######_Soultions_
-- Link to FundRef during the production process?
-- There is a 30 minute window in the PoA wokrflow when the XML remains in an eLife AWS bucket, this is an opportunity to go in and overwrite it without affecting the PoA to HW delivery and the production of the downstream deliveries, CrossRef and PubMed.
 
 ## Pre-editing
 
