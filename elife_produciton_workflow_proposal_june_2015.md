@@ -3,6 +3,8 @@
 See <https://github.com/elifesciences/elife-vendor-workflow-config/blob/master/elife_file_naming_proposal_2015-05-28.md>
 for file naming requirements.
 
+Until eLife's own platform is live, we'll require delivery of files for HighWire to go to HighWire direct, as well as to the eLife bucket elife-articles-hw.
+
 ######General note on turnaround times:
 The vendor works until 3.30pm UK time.
 Therefore, where their turnaround times are specified in hours, this excludes the period of from 3.30pm UK time to 3.30am UK time the following day.
