@@ -127,26 +127,47 @@ Once content is copy edited it is moved to this queue by ExeterPremedia.
 eLife production staff will review the content and then it will move to the next stage.
 We anticipate this stage is a transition stage only and will be removed once everything is bedded in.
 
-**Questions to ExeterPremedia:
-1 - Should production move it via ECS and you send a message to PaW?**
+**Questions to ExeterPremedia: Should production move it via ECS and you send a message to PaW?**
 
 
 
 ##Decision letter and response
 
 ####Expectations:
-These items are not ready at the point of export. The tunraround time for them to be produced is 3-5 days. On completion, they will be delivered by email using a template email.
-When these are delivered they should be moved to Publisher: Deliver letters on 
+These items are not ready at the point of export. The turnaround time for them to be produced is 3-5 days. On completion, they will be delivered by email using a template email.
+When these are delivered they should be moved to Publisher: Deliver letters on PaW
 
 Note, there can be figures/tables/videos in the author response.
-We anticipate this step will require input at the vednor end.
+We anticipate this step will require input at the vendor end.
+There is a slim chance that these items are delivered before the content reaches Publisher: check content.
 
+**Questions to ExeterPremedia: How should we dela with this in SOAP messages?**
 
 
 ####Output:
+Once a decision letter and response and assets (if any) are delivered by email to ExeterPremedia they should be processed and made available on ECS.
+
+Decision letter and response components are zipped up and delivered to an eLife AWS bucket: elife-production-letters
+
+- HTML file - follow file naming convention with .html suffix
+- Asset files of the author response component are converted/sized/renamed as appropriate
+- Zip file name: elife-12345-r1.zip
+- Rare, but if reprocessed r1 suffix will be replaced with r2 suffix (zipped file). All actual files remain unchanged in naming convention, even if changed
+- SOAP message to PaW to move article to next stage: Publisher: Deliver digest
+ 
+**Questions to ExeterPremedia: Is it easier to deliver just the decision letter/response/assets to the AWS bucket or ALL the items?**
 
 ####Turnaround time:
+
+- If there are no problems, this should process automaticallly. If there are complications we request a 12 h turnaround time.
+
+**Questions to ExeterPremedia: Is that TAT OK?**
+
 ####Volume:
+
+Most research content has a decision letter and response, but occassionally an article is published without both or one of these components.
+
+**Questions to ExeterPremedia: How should we indicate to you if either/both these items are not going to be published and can you automatically skip the Publisher: Deliver lettersContent processor: Process letters stages on PaW?**
 
 ##Digest
 This is the final expected item for an article before it can be delivered to the author. It is a standard piece of simple content.
