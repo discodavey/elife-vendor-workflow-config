@@ -9,6 +9,12 @@ Until eLife's own platform is live, we'll require delivery of files for HighWire
 The vendor works until 3.30pm UK time.
 Therefore, where their turnaround times are specified in hours, this excludes the period of from 3.30pm UK time to 3.30am UK time the following day.
 Indian Bank holidays - a list of which will be supplied.
+**ExeterPremedia please supply**
+
+######General note on new procedure (for production):
+Production now export from the "Export System" as soon as an article enters this stage (no QC checks)
+No manual movement on PaW between the stages - all movement is done on ECS and that is messaged back to PaW
+The ECS stages will mirror PaW stages.
 
 
 ##Export process
@@ -47,26 +53,30 @@ Asset files can be any combination of the following:
 - author response asset file, for example, figure
 
 ####Expectations:
-At the start of this process the Word/LaTex file is converted to an HTML file, and overlaid on the XML metadata output to cross check. 
+At the start of this process the Word/LaTex file is converted to an HTML file, and overlaid on the XML metadata. Any conflicts in the affiliations and author names: the Word/LaTex file is seen as the source of truth and overwrite the EJP output. The EJP output is seen as the source of truth for:
+- article type and article info/publisher info
+- Reviewing editor details
+- Related article links
+- Keywords/Major research area/research organism
+- Funding
+- Author contributions
+- Conflicts of interest
+- Copy right details
+- Datasets
 
-Any conflicts in the information result in an output file to the production team to check, but the Word/LaTex source file is considered the source of truth for author and affiliation information. 
 
-**ExeterPremedia please confirm the process - will this be a downlaod from ECS or an email delivery or shall we set up an AWS bucket for this?**
+Track changes - only italicisation from pre-editing needs to be available for author to view, with copy edited changes. **This is an enhancement - release date TBD**
 
-The XML metadata is the source of truth for other metadata outputs, eg Funding information, copyright, conflict of interest, contribution. See <https://github.com/elifesciences/elife-vendor-workflow-config/blob/master/eLife%20JATS%20processing%20instructions%20xml.xlsx>
-
-This task is completed using the ECS tool.
-
-Track changes - only italicisation from pre-editing needs to be available for author to view, with copy edited changes. **ExeterPremedia please confirm**
-
-For more detailed description of the pre-editing process see: **ExeterPremedia please provide**.
+For more detailed description of the pre-editing process see: **ExeterPremedia please provide rules document**.
 
 ####Output:
 At the end of the pre-editing process all components are zipped up and delivered to an eLife AWS bucket: elife-production-preedited
 
-A SOAP message is delivered to PaW to push the article onto the next stage. This message will also include additional metadata details: MS pages and word count.
+A SOAP message is delivered to PaW to push the article onto the next stage
+This message will also include additional metadata details: MS pages and word count.
 
-- HTML file - follow file naming convention with .html suffix
+- Main XML file
+- XML file of EJP XML converted: file naming: elife-00000-EJP.xml
 - All asset files are converted/sized/renamed as appropriate
 - Zip file name: elife-12345-r1.zip
 - Rare, but if reprocessed r1 suffix will be replaced with r2 suffix (zipped file). All actual files remain unchanged in naming convention, even if changed
@@ -95,7 +105,7 @@ It is anticipated that at current publishing volumes up to 5 articles coupld be 
 
 ####PaW workflow exceptions:
 No feature content is copy edited or expects Decision Letter/Response or Digest.
-Therefore, for all feature content move on PaW from Content processor: Pre-edit file to Publisher: OK proof to author.
+Therefore, for all feature content move on PaW/ECS from Content processor: Pre-edit file to Publisher: OK proof to author.
 
 
 ## Copy editing
@@ -106,14 +116,16 @@ Therefore, for all feature content move on PaW from Content processor: Pre-edit 
 - If any changes to assest(s) are required, copy editor will either download, edit and reload, or add  Author Queries (AQs), asking author to resupply during the author proofing process 
 - All copy editing changes are tracked and are available to the author and production to view when checking the proof.
 
-If level 3 copy editing required, Production staff will manually move the article from Publisher: Assign copy editor to Copyeditor: Copy edit, when they have a copy editor tasked with the job.
+If level 3 copy editing required the article will enter Publisher: Assign copy editor, on PaW and ECS. ECS will deliver an email to production to log into ECS and assign to a copy editor. Once this is done, ECS will send the email to the chosen copy editor with a link.
+
+**eLife to provide list of freelance copy editors and their email addresses, as well as template email text for the message**
+
 
 ####Output:
 At the end of the copy editing process all components are zipped up and delivered to an eLife AWS bucket: elife-production-copyedited
 
-- HTML file - follow file naming convention with .html suffix
-- All asset files are converted/sized/renamed as appropriate
-- At the end of this process all components are zipped up and delivered to an eLife AWS bucket: elife-production-preedited
+- XML 
+- All asset files
 - Zip file name: elife-12345-r1.zip
 - Rare, but if reprocessed r1 suffix will be replaced with r2 suffix (zipped file). All actual files remain unchanged in naming convention, even if changed
  - SOAP message to PaW to move article to next stage: Publisher: Check content
@@ -134,10 +146,12 @@ It is anticipated:
 
 ####Publisher: Check content
 Once content is copy edited it is moved to this queue by ExeterPremedia.
-eLife production staff will review the content and then it will move to the next stage.
+eLife production staff will review the content and then move to the next stage on ECS.
 We anticipate this stage is a transition stage only and will be removed once everything is bedded in.
 
-**Questions to ExeterPremedia: Should production move it via ECS and you send a message to PaW?**
+
+####Output:
+ - SOAP message to PaW to move article to next stage
 
 
 
@@ -206,7 +220,8 @@ All research articles have a Digest.
 ####Expectations:
 There is a temporary stage after all content is ready "Publisher: OK proof to author" - this is potentially transition stage and will be removed once processes are bedded in.
 
-**Questions to ExeterPremedia: Should production move it via ECS and you send a message to PaW?**
+eLife production staff will review the content and then move to the next stage on ECS. Tis will generate the change on PaW.
+
 
 **Questions to ExeterPremedia: Can the Figures PDF be incorporated into the author proof stage on ECS?**
 
@@ -236,7 +251,7 @@ All content will go thorugh this process
 Author will edit their content, move components around on the PDF representation view, and potentially upload new versions of figures, videos etc.
 It is anticipated that most changes will be done automatically, but in rare circumstances the author will not be able to directly input their changes and regenerate their proof.
 
-**Could we add an SLA that 90% will not require additional intervention by ExeterPremedia?**
+**Could we add an SLA that 90% will not require additional intervention by ExeterPremedia? Later - after 4 months live**
 
 ####Output:
 At the end of the author correction process all components are zipped up and delivered to an eLife AWS bucket: elife-production-authorcorrected
@@ -250,7 +265,7 @@ At the end of the author correction process all components are zipped up and del
 
 ####Turnaround time:
 Authors are given 2 days to complete this process, however, they often take longer.
-We'd like automatic chasing mechanisms to be inplemented. Details of which **TBC**
+We'd like automatic chasing mechanisms to be inplemented. Details of which **Built into system - need to send EP the details - ie times and who and email text**
 
 ####Volume:
 All content will go through this process.
@@ -277,7 +292,7 @@ All content will go through this process.
 ####PaW workflow exceptions:
 Feature content goes through an additional step before the content is returned to the production staff: Publisher: Feature staff check author changes. The output from this stage is also required to be sent to it's onw AWS bucket: elife-production-featurechecked
 
-**Questions to ExeterPremedia: Will you add this step on ECS for feature content only?**
+**Questions to ExeterPremedia: Will you add this step on ECS for feature content only? YES**
 
 
 ##final delivery of files
@@ -309,24 +324,10 @@ If on final sign off manual intervention is required by vendor before delivery t
 Expectation is that less than 10% of content will go through this process.
 
 ##Non research article content
-The key components of non-research content are:
-Commissioned and process is managed by an in house team called the "Features Team"
-Submission system is used to a limited extend in the tracking of this content.
 
-Currently the features team are shoehorning content into the submission system author screens in order to generate XML metadata output. It would be the preference that they follow a template Word file and only input the content into the submission system to generate a DOI. Therefore the XML metadata could be thrown away with the exception of recording the DOI and the Word file would be the source of all content and metadata.
-
-####Insights
-These are commissioned commentaries on particularly interesting research articles. They are commissioned on acceptance of the original research article and thus can delay the publication of that article as they are published together and linked. Therefore, once in the prodcution system these items need to be processed as quickly as possible.
-With the exception of a few differences in the XML, and the besoke nature of the display fo the author affiliation details, this content is very simple and non-complex.
-
-####Feature 1
-These are commissioned opinion pieces. With the exception of a few differences in the XML, and the besoke nature of the display fo the author affiliation details, this content is very simple and non-complex.
-
-####Feature 2
-These are commissioned research pieces. They follow the template of a research article, with some minor differences.
-The metadata from the Submission system would be used in this case.
-
-####Editorials
-These are commissioned editoral pieces. With the exception of a few differences in the XML, and the besoke nature of the display fo the author affiliation details, this content is very simple and non-complex.
 
 ##Press content
+
+
+##Correction procedure
+
