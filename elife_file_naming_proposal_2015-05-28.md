@@ -109,6 +109,20 @@ For example, an article with a top level source code, two main figures, where on
 - elife-00012-fig2-figsupp1-code1.csv
 - elife-00012-code1.csv
 
+##Complete list of sub components:
+
+- figure -> fig
+- figuresupplement -> figsupp
+- supplementary file -> supp
+- media (includes videos, audio and animation) -> media
+- inline-media -> inf
+- source code -> code
+- source data -> data
+- figures (PDF if the figures) -> figures
+- reporting standards -> repstand [note: not inu se as at October, 2015]
+- decision letter file, for example figure -> dec-fig
+- appendix asset file, for example figure (each appendix gets a unique number X) -> appX-fig
+- author response asset file, for example figure -> resp-fig
 
 ## Zip file naming pattern
 
